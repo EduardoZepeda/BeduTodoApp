@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import TodoForm from './todoForm'
+import TodoList from './TodoList'
 
 function App() {
   return (
@@ -14,11 +15,7 @@ function App() {
       </Grid>
       <Grid container justify="center">
         <Grid item md={8}>
-          {/* <ListItems
-            todos = {this.state.todos}
-            toggleCompleted = {this.toggleCompleted}
-            deleteTodo = {this.deleteTodo}
-          /> */}
+          <TodoList />
         </Grid>
       </Grid>
     </Fragment>
